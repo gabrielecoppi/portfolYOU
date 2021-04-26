@@ -1,10 +1,13 @@
 <div class="col mt-4">
-  <div class="timeline-body">
-    {% for item in site.data.timeline %}
+  <h2 div class="timeline-body">{{ include.title }}</h2>
+    {% for item in include.source.timeline %}
       <div class="timeline-item">
         <div class="content">
           <h2>{{ item.title }}</h2>
           <h6 class="date">{{ item.from }} — {{ item.to }}</h6>
+          <h6 class="thesis">
+            {{item.thesis}} <a href="https://{{item.website}}" target="_blank">{{item.short_form}}</a>
+          </h6> 
           <p>{{ item.description }}</p>
         </div>
       </div>
