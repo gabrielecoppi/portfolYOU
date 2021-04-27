@@ -5,9 +5,5 @@
 {%- endif -%}
 
 <a class="m-1 btn btn-{{ include.style | default: 'outline-primary' }} btn-{{ include.size | default: 'md' }} {{ block_style }}" href="{{ include.link | default: '#' }}">
-  {% if include.gitimg %}
-    <i class="fab fa-github"> {{include.text | default: "Button" }} </i>
-  {%- else -%}
-    {{include.text | default: "Button" }}
-  {%- endif -%}
+  {{include.text | default: "Button" }}
 </a>
