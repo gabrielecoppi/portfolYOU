@@ -1,0 +1,30 @@
+@import "portfolYOU";
+
+html[data-theme="dark"] {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+html[data-theme='dark'] img {
+    filter: invert(100%) hue-rotate(180deg);
+}
+
+html[data-theme="light"] {
+    filter: invert(0) hue-rotate(0deg);
+}
+
+html[data-theme="light"] img {
+    filter: invert(0%) hue-rotate(0deg);
+}
+
+
+@media(prefers-color-scheme: dark) {
+	html, html[data-theme="dark"] {
+  		filter: invert(1) hue-rotate(180deg);
+	}
+
+    html, html[data-theme='dark'] img {
+        filter: invert(100%) hue-rotate(180deg);
+    }
+	
+}
+
